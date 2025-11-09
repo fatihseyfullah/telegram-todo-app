@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Uygulaması</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📝 Todo Uygulaması</h1>
+            <p>Telegram'dan gelen mesajlarınız burada görünecek!</p>
+        </header>
+
+        <div class="add-todo">
+            <input type="text" id="todoInput" placeholder="Yeni todo ekle..." maxlength="200">
+            <button onclick="addTodo()">Ekle</button>
+        </div>
+
+        <div class="filters">
+            <button onclick="filterTodos('all')" class="active">Tümü</button>
+            <button onclick="filterTodos('active')">Aktif</button>
+            <button onclick="filterTodos('completed')">Tamamlanan</button>
+        </div>
+
+        <div id="todoList" class="todo-list">
+            <!-- Todolar burada listelenecek -->
+        </div>
+
+        <div class="stats">
+            <span id="totalCount">Toplam: 0</span>
+            <span id="activeCount">Aktif: 0</span>
+            <span id="completedCount">Tamamlanan: 0</span>
+        </div>
+
+        <div class="telegram-info">
+            <h3>📱 Telegram Entegrasyonu</h3>
+            <p>Telegram'dan todo eklemek için botumuza mesaj gönderin!</p>
+            <p><strong>Komutlar:</strong></p>
+            <ul>
+                <li><code>/start</code> - Botu başlat</li>
+                <li><code>/list</code> - Todoları listele</li>
+                <li>Herhangi bir mesaj - Yeni todo ekle</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

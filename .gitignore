@@ -1,0 +1,99 @@
+# Bağımlılıklar
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Çevre değişkenleri
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE ve editör dosyaları
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# İşletim sistemi dosyaları
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Log dosyaları
+*.log
+logs/
+
+# MongoDB
+data/db/
+*.mongodb
+mongod.pid
+
+# Build/derleme dosyaları
+dist/
+build/
+*.tsbuildinfo
+
+# Cache dosyaları
+.npm
+.eslintcache
+
+# Test dosyaları
+coverage/
+.nyc_output
+
+# Runtime verileri
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Coverage directory used by tools like istanbul
+coverage
+*.lcov
+
+# Package lock files (tercihe bağlı - hangisini kullanıyorsanız diğerini ignore edin)
+# package-lock.json
+# yarn.lock
+
+# Temporary folders
+tmp/
+temp/
+
+# Docker
+.docker/
+docker-compose.override.yml
+
+# Backup files
+*.backup
+*.bak
+
+# Session files
+*.session
+
+# Certificate files
+*.pem
+*.crt
+*.key
+
+# Runtime data for MongoDB
+/data/db/mongod.lock
+
+# Telemetry
+telemetry/
+
+# Production build
+/public/build/
